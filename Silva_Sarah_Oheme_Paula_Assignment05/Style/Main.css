@@ -1,0 +1,384 @@
+
+/* parallax effect*/
+body, html{
+	height: 100%;
+}
+
+.bg{
+	background-image: url('../Images/lawyer3.jpg');
+
+	height: 100%; 
+		
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Fixing and Floating logo and navigation bar*/
+#logo{
+	width: 10%;
+	float:left;
+	top:0;
+	margin:0;
+	padding-top:0;
+	padding-bottom:0;
+	padding-left:1em;
+	font-family: "Colonna MT", 'MedievalSharp', sans-serif;
+	font-size: 2em;
+	position:fixed;
+	top:0;
+}
+
+#main-menu{
+	float:right;
+	width: 85%; 
+	height: 3.5em; 
+	margin: 0;
+	padding-right: 3em;
+	padding-left: 9em;
+	top: 2.5em; 
+	position:fixed;
+}
+
+/* Set color for background (footer and body)*/
+
+footer{
+	clear: both; 
+	background-color: #595959;
+	position: relative;
+	bottom: 0;
+	padding-top: 2.5em;
+	padding-bottom: 3px;
+	padding-left: 2em;
+	overflow: auto;
+}
+
+/* Set style for the content right after the navigation bar*/
+#content{
+	height: 100%;
+	clear:both;
+	background-color: rgb(230, 173, 67);
+	position: relative;
+	font-family: Georgia, sans-serif;
+	overflow:auto;
+	padding-bottom: 3em;
+}
+#content h2{
+	margin: 0;
+	padding: 1em;
+	text-align: center;
+	font-size: 40px;
+}
+/* set values for content*/
+#content p{
+	line-height: 1.5em;
+	width: 65%;
+	margin-left: auto;
+    margin-right: auto;
+}
+/* accordion for attorneys (read more)*/
+/*.readmore{
+	text-decoration: underline;
+}*/
+#content .readmore a{
+	border: none;
+}
+h3{
+	text-align: center;
+}
+#content h3 a{
+	border: none;
+	color: black;
+}
+#content h3 a:hover{
+	color: white;
+	padding-bottom:0;
+}
+.readMore{
+	display: none;
+	cursor: none;
+}
+.readmore a:hover{
+	border-bottom: 0px solid;
+	border-left: 0px solid;
+	border-right: 0px solid;
+	border-top: 0px solid;
+}
+/* set sections on practice areas*/
+.practiceareas{
+	border: outset grey;
+	padding-bottom: 0.5em;
+	margin-bottom: 0.5em;
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.ourVictories{
+	border: outset grey;
+	padding-bottom: 0.5em;
+	margin-bottom: 0.5em;
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+}
+.new{
+	border: outset grey;
+	padding-bottom: 0.5em;
+	margin-bottom: 0.5em;
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+}
+#businesscontacts p{
+	margin-left: auto;
+    margin-right: auto;
+}
+#mediascontacts a{
+	display: inline;
+	text-decoration: none;
+	padding-left: 15em;
+	padding-bottom: 5em;
+}
+#mediascontacts img:hover{
+	border: 2px grey outset;
+}
+
+
+/* set each news to float left on main page*/
+#newsPresentation{
+	width: 100%;
+}
+.newShow{
+	float: left;
+	width: 30%;
+	padding-left: 2em;
+	padding-bottom: 2em;
+}
+.newShow h3{
+	padding-bottom: 1em;
+}
+.newShow p{
+	padding-bottom: 1em;
+}
+.newShow h3,p{
+	color: black;
+}
+.newShow a{
+	text-decoration: none;
+}
+.newShow h3:hover{
+	color: white;
+}
+.newShow p:hover{
+	color: white;
+}
+
+#frase, #slogan{
+	text-align: center;
+}
+#frase{
+	font-size: 3em;
+}
+#slogan{
+	font-size: 2em;
+	padding-bottom: 2.5em;
+}
+#presentNews{
+	font-size: 1.5em;
+	padding-left: 2em;
+	padding-bottom:1em;
+}
+#teamPic{
+	padding-top: 3em;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/* Set navigation style and dropdown menu*/
+#main-menu ul li{
+	display:inline-block; /* makes the main manu inline*/
+}
+.navbar	{ /* set the whole navigation to have particular height*/
+	height: 3.5em;
+    padding: 0;
+	margin: 0;
+}
+.navbar ul{ /* set the unordered lists inside the navbar*/
+	position:fixed;
+	overflow:auto;
+}
+.navbar li{ /* set the lists inside the navbar*/
+	height: auto;
+	width: 11.5em; 
+	float: left;  
+	text-align: center;  
+	list-style: none;  
+	font: normal bold 15px;
+	padding: 0;
+	margin: 0;
+}
+.navbar a{ /* set all the links on navbar*/							
+	padding: 20px 0;
+	text-decoration: none;  
+	color: black; 
+	display: block;
+	font-family: "Century Gothic", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+.attorneys:hover{ /* set the attorneys hovering to dropdown inline*/
+	display: inline;
+}
+.navbar li:hover { /* set the lists and the links to hover on navbar*/
+	border-left: 1px solid #efefe8; 
+	border-right: 1px solid #383837; 
+	border-top: 1px solid #efefe8; 
+	border-bottom: 1px solid #383837;
+}
+.navbar a:hover { /* set the lists and the links to hover on navbar*/
+	border-left: 1px solid #efefe8; 
+	border-right: 1px solid #383837; 
+	border-top: 1px solid #efefe8; 
+	border-bottom: 1px solid #383837;
+}
+.navbar li ul{ /* set the unordered lists inside the lists in the navbar*/
+	display: none;  
+	height: auto;									
+	margin: 0; 
+	padding: 0;
+	width: 80%;		
+}				
+.navbar li:hover ul{ /* set the unordered lists when the lists above are hovered*/
+	float:left;
+    display: block;
+}	
+.navbar li ul li{ /* set the lists inside the unordered lists inside the lists in the navbar*/
+	width: 16em;
+	font-size: 10px;
+}
+.navbar li ul li a{ /* set the links inside the lists inside the unordered lists inside the lists in the nav bar*/
+	font-size:15px;
+}
+.navbar li ul li a:hover{ /* set the links inside the lists inside the unordered lists inside the lists in the navbar to hover*/
+	display: block;
+	height: 2em;
+	border-left: 1px solid #efefe8; 
+	border-right: 1px solid #383837; 
+	border-top: 1px solid #efefe8; 
+	border-bottom: 1px solid #383837;
+}
+#features{
+	clear: both;
+	margin-left: auto;
+    margin-right: auto;
+	float: left;
+	font-size: 15px;
+	overflow: auto;
+	font-family: Verdana, sans-serif;
+}
+#features a{
+	text-decoration: none;
+	border: none;
+	color: white;
+}
+#features a:hover{
+	color: black;
+}
+#credits{
+	color: white;
+	font-size: 15px;
+	float:right;
+	overflow: auto;
+	padding-right: 2em;
+	font-family: Verdana, sans-serif;
+	bottom: 0;
+}
+#credits a{
+	color: white;
+}
+#credits a:hover{
+	color: black;
+	border: none;
+}
+.menu-btn{
+	float: right;
+}
+form{
+    padding-left: 10em;
+}
+@media screen and (min-width: 1000px){
+	#page{
+		max-width:100%;
+		margin: 0 auto;
+	}
+	.menu-btn{
+		display:none;
+	}
+	
+}
+@media screen and (max-width: 800px){
+	#main-menu ul li{
+	display:none; /* makes the main menu underneath each other*/
+	}
+	.navbar a{ /* set all the links on navbar*/							
+	display: none;
+	}
+	.navbar li ul{ /* set the unordered lists inside the lists in the navbar*/
+	display: none;
+	}
+	img{
+		max-width: 90%;
+	}
+	
+}
+
+@media screen and (max-width: 600px){
+	#logo-nav{
+		background-color: white;
+		overflow: hidden;
+	}
+	/* Style the links inside the navigation bar */
+	#logo-nav a {
+    	float: left;
+ 	   	display: block;
+    	color:black;
+    	text-align: center;
+    	padding: 14px 16px;
+    	text-decoration: none;
+    	font-size: 0.033em;
+	}
+	/* Change the color of links on hover */
+	#logo-nav a:hover {
+    	color:rgb(71, 70, 70);
+	}
+	/* Add an active class to highlight the current page */
+	.active {
+		color: black;
+	}
+	/* Hide the link that should open and close the topnav on small screens */
+	#logo-nav .icon {
+	    display: none;
+	}
+	.newShow{
+		width:90%;
+		padding-bottom: 2em;
+	    margin-left: auto;
+		margin-right: auto;
+		padding-left:1.5em;
+	}
+	#logo{
+		float: left;
+	}
+	.menu-btn{
+		float: right;
+	}
+	#content{
+		clear: both;
+	}
+}
+

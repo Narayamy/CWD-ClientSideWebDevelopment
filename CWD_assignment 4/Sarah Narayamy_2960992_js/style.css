@@ -1,0 +1,129 @@
+body{
+	
+	background-color: orange;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.6;
+}
+
+#page-content{			
+	width: 85%;
+	margin: 0 auto;
+	background: #95EE5A;
+	box-shadow: 0 0 10px black;
+}
+
+header {
+	background: #000000 url(imagesQuiz/background.jpg) 50% 50% no-repeat;
+	height: 200px;
+}
+
+header h1{
+	font-family: 'Aclonica', sans-serif;
+	font-size: 4em;	
+	color: orange;
+	padding: 2% 2%;
+	text-align: right;
+}
+
+#intro{
+	padding: 2em 2%;
+}
+ #intro h1{
+	 font-family: 'Righteous', cursive;
+	 color: orange;
+	 padding-left: 5%;
+}
+
+#intro p{
+	font-family: 'Righteous', cursive;
+	font-size:1.2em;
+	padding: 0 5%;
+}
+
+#how-to-complete-the-quiz{
+	font-family: 'Righteous', cursive;
+	color: green;
+	text-decoration: none;
+	font-size: 1.2em;
+	padding-left: 5%;
+}
+#how-to-complete-the-quiz:hover{
+	color: white;
+}
+#accordion{
+	width: 85%;
+	margin: 0 auto;
+}
+#accordion div{
+	text-align: center;
+}
+#accordion h2{
+	font-family: 'Aclonica', sans-serif;
+}
+#accordion p{
+	font-family: 'Righteous', cursive;
+}
+
+#Incorrect1, #correct1, .hidden-feedback, #Incorrect2, #Correct2,#Incorrect3, #Correct3, #Incorrect4, #Correct4,#Incorrect5, #Correct5 {
+	color: orange;
+}
+#accordion .align-left{
+	text-align: left;
+	margin-left: 12%;
+}
+#answer-4{
+	width: 50%;
+}
+
+#submit{
+	margin: 5% 10%;
+    font-size: 1.5em;
+    color: orange;
+    font-weight: bold;
+}
+
+#feedback{
+	font-family: 'Aclonica', sans-serif;
+	font-size: 1.8em;
+    text-align: center;
+    color: darkorange;
+	margin-top: 0;
+    margin-bottom: 5%;
+}
+#congrats, #tryagain{
+	text-align: center;
+}
+
+#bibliography{
+	padding: 2em;
+	font-family: 'Righteous', cursive;
+}
+
+#bibliography a{
+	text-decoration: none;
+	color: orange;
+}
+#bibliography a:hover{
+color: white;}
+
+
+
+
+
+
+
+
+footer{
+	padding: 1em 2%;
+	background-color: rgb(40,92,0);
+	color: white;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+}
+footer a:hover{
+	text-decoration: none;
+	color: orange;
+}
+

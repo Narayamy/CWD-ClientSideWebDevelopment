@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset="utf-8"/>	
+	<title>Interactive Quiz_assignment 4_Sarah Narayamy, 2960992</title>
+	<link href="style.css" rel="stylesheet"> <!-- my CSS file -->
+	<link href="jquery-ui.min.css" rel="stylesheet"> <!-- Jquery-ui CSS file -->
+	<link href="https://fonts.googleapis.com/css?family=Aclonica|Righteous" rel="stylesheet"> <!--Google Fonts doesn’t pass in the HTML validator -->
+</head>
+
+<body>
+	<div id="page-content">
+		<header>
+			<h1>Irish Culture</h1>
+		</header>
+		
+		<!-- Introduction: challenge the user to test his/her knowledge on your quiz-->
+		<div id="intro">		
+		<h1>The Irish Culture Quiz</h1>
+		<p>Ireland is an isle full of myths and legends, which make this country even more interesting as we all like a bit of a mistery.<br/> Complete this quiz to test what you know it is myth or fact about this magnificent Emerald island!</p>
+		<!--Explanation: hidden and accessed by the 'How to complete the quiz' link-->
+		<a href="#" id="how-to-complete-the-quiz">CLick here to know How to Complete the Quiz</a>
+		<p class="hidden">This Quiz is composed of five questions.<br/> You need to read the question carefully and answer all the questions before click on the 'Submit' button. <br/>Your score will appear when you click on the button and the correct answer will be shown for you after the options in each quetion.<br/> Make sure you go through all the questions after you receive your feedback so you could learn more about the irish culture! <br/> Good Luck! </p>
+		</div>
+		
+		<!-- Quiz: Use of accordion to show 1 question at the time -->
+		<div id="accordion">
+			<h3>Question 1</h3>
+			<div>
+			<h2>St. Patrick's day</h2>
+			<img src="imagesQuiz/hat.png" alt="St. Patrick's hat" title="St. Patrick's hat" width="300" height="300"/>
+			<p>St. Patrick is known for bring days of good times and green beer to pubs across the world. <br/>From the sentences below, choose the incorrect one.</p> <br/>
+			<div class="align-left"><input type="radio" name="question-1" value="true"/>St. Patrick wasn’t made a saint until centuries after his death <br/>
+			<input type="radio" name="question-1" value="true"/>St. Patrick was born in Britain to a wealthy family<br/>
+			<input type="radio" name="question-1" value="true"/>During his childhood, he was kidnapped and sold into slavery in Ireland<br/>
+			<input type="radio" name="question-1" value="true"/>St. Patrick taught the Irish about the Christian religion<br/>
+			<input type="radio" name="question-1" value="false"/>St. Patrick became a hero as soon as he died<br/>			
+			<input type="radio" name="question-1" value="true"/>There never were any snakes in Ireland<br/>	</div>				
+			<p id="Incorrect1" class="hidden"> Incorrect answer. </p>
+			<p id="correct1" class="hidden"> Correct answer! </p>
+			<p class="hidden-feedback">St. Patrick was soon forgotten after his death. It wasn’t until many years later that monks began telling the tale of St. Patrick forcing all the snakes out of Ireland. </p>
+			</div>
+			
+			<h3>Question 2</h3>
+			<div>
+			<h2>The Shamrock</h2>
+			<img src="imagesQuiz/shamrock3.png" alt="shamrock" title="shamrock" width="200" height="200"/>
+			<img src="imagesQuiz/shamrock-512.png" alt="shamrock" title="shamrock" width="200" height="200"/>			
+			<img src="imagesQuiz/shamrock2.jpg" alt="shamrock" title="shamrock" width="200" height="200"/>
+			<p><br/>The Shamrock with three green leaves have became an irish symbol and it held different <br/>meanings for different cultures in history.<br/>Select the correct sentences below. Four sentences are true.</p><br/>
+			<div class="align-left">
+			<input type="checkbox" name="question-2" value="t1"/>The Celtics believed the Shamrock had mystical properties due to the plant’s three heart-shaped leaves <br/>
+			<input type="checkbox" name="question-2" value="t2"/>The Celtics believed three was a sacred number<br/>
+			<input type="checkbox" name="question-2" value="t3"/>Some Christians believed the three leaves represented the Holy Trinity<br/>
+			<input type="checkbox" name="question-2" value="f1"/>The Druids burnt all the 4 leaves Shamrock in Ireland as they believed it meant bad luck<br/>
+			<input type="checkbox" name="question-2" value="f2"/>The Christians used to drink Shamrock tea during Christmas <br/>			
+			<input type="checkbox" name="question-2" value="t4"/>The Druids believed the Shamrock was a sacred plant that could ward off evil<br/></div>	
+			<p id="Incorrect2" class="hidden"> Incorrect answer. </p>
+			<p id="Correct2" class="hidden"> Correct answer! </p>
+			<p class="hidden-feedback">There is no record in history that 4 leaves Shamrock were ever burnt in Ireland and Shamrock tea was never a tradition on Christmas.</p>
+			</div>
+			
+			<h3>Question 3</h3>
+			<div>
+			<h2>Irish staple food</h2>				
+			<img src="imagesQuiz/starch.jpeg" alt="staple food" title="staple food" width="400" height="250"/>
+			<p> What is the starchy plant tuber that is known for being the irish staple food? <br/> Please write the answer below in the plural form.</p>
+			<input type="text" id="answer-3" name="potato" maxlength="20"/>
+			<p id="Incorrect3" class="hidden"> Incorrect answer. </p>
+			<p id="Correct3" class="hidden"> Correct answer! </p>
+			<p class="hidden-feedback">A lot of Irish people like POTATOES but that doesn’t mean they are the country’s primary food group</p>
+			</div>	
+			
+			<h3>Question 4</h3>
+			<div>
+			<h2>Stereotype</h2>
+			<img src="imagesQuiz/stereotype.jpg" alt="Stereotype" title="Stereotype" width="380" height="310"/>
+			<p>Every country has its own stereotypes. Some may be completely unfair but some may be slightly true. <br/> Select the option which does not apply for the irish stereotype:</p>
+			<select id="answer-4">
+			<option disabled selected value>Select only one option:</option>
+			<option value="Stereotype">The Irish are drunks</option>
+			<option value="Stereotype">Irish people have red hair</option>
+			<option value="Stereotype">The Irish speak mostly irish</option>
+			<option value="Stereotype">Irish people are luck.'The luck of the Irish' is related to the Leprechauns and its pot-of-gold</option>
+			<option value="false">The Irish are short people</option>
+			<option value="Stereotype">The Irish loves rugby</option>				
+			</select>
+			<p id="Incorrect4" class="hidden"> Incorrect answer. </p>
+			<p id="Correct4" class="hidden"> Correct answer! </p>
+			<p class="hidden-feedback"> Is not common to hear that Irish people are shorter.</p>				
+			</div>	
+			
+			<h3>Question 5</h3>
+			<div>
+			<h2>The Irish Language</h2>
+			<p>Gaeltacht is an Irish-language word used to denote any primarily Irish-speaking region. In Ireland, the term Gaeltacht refers individually to any, or collectively to all, of the districts where the government recognises that the Irish language is the predominant vernacular, or language of the home. <br/><br/>What is the County with the largest Gaeltacht parish In Republic of Ireland?</p>
+			<img src="imagesQuiz/article-352.jpg" alt="Irish Language" title="Irish Language" width="400" height="280"/><br/>
+			<select name="counties" id="answer-5">
+			<option disabled selected value>Select only one option:</option>
+			<option value="Dublin">County Dublin</option>
+			<option value="Galway">County Galway</option>
+			<option value="Donegal">County Donegal</option>
+			<option value="Limerick">County Limerick</option>
+			<option value="Mayo">County Mayo</option>					
+			</select>
+			<p id="Incorrect5" class="hidden"> Incorrect answer. </p>
+			<p id="Correct5" class="hidden"> Correct answer! </p>
+			<p class="hidden-feedback">County Donegal, is the largest Gaeltacht parish in Ireland.</p>	
+			</div>
+		</div>	
+		<input type="submit" id="submit" value= "Submit"/>	
+		<p id="feedback"></p>
+		<div id="congrats"   class="hidden">
+		<img src="imagesQuiz/congrats.png" alt="Congratulations" title="Congratulations" width="250" height="200"/></div>
+		<div id="tryagain" class="hidden">
+		<img src="imagesQuiz/try-again.png" alt="try again" title="try again" width="300" height="200"/></div>		
+		
+		<div id="bibliography">
+		<h2>References:</h2>
+		<ul>
+		<li>2016, <i>What are the most common myths about Ireland?</i>, Aran Sweater Direct [Online], Available:
+		<a href="https://www.aransweatersdirect.com/blogs/blog/123480449-what-are-the-most-common-myths-about-ireland" target="_blank">Aran Sweater Direct </a>[Accessed in 23 March 2018].</li>
+		<li>Colley, A., 2011, <i>Top 10 Irish Myths and Legends</i>, TopTenZ [Online], Available:
+		<a href="http://www.toptenz.net/top-10-irish-myths-and-legends.php" target="_blank">Top Tenz </a>[Accessed in 24 March 2018].</li>
+		<li>Phelan, K., 2017, <i>10 Stereotypes All Irish People Hate</i>, The Culture Trip [Online], Available:
+		<a href="https://theculturetrip.com/europe/ireland/articles/10-stereotypes-all-irish-people-hate/" target="_blank">The Culture Trip </a>[Accessed in 23 March 2018].</li>
+		<li>Wikipedia, the free encyclopedia: Irish Language [Online], Available: 
+		<a href="https://en.wikipedia.org/wiki/Irish_language" target="_blank"> wikipedia.org/wiki/Irish_Language </a>[Accessed in 24 March 2018].</li>
+		</ul>
+		</div>
+		<footer> 
+		Quiz by Sarah Narayamy, 2960992, <address><a href="mailto:sarahnarayamy@gmail.com">sarahnarayamy@gmail.com</a></address>
+		<br/>&copy; 2018 </footer>	
+	</div>	
+	<script src="external/jquery/jquery.js"></script> <!-- JQuery file downloaded from JQuery-Ui package for accordion -->
+	<script src="jquery-ui.min.js"></script> <!-- JQuery-Ui file -->
+	<script src="javascript.js"></script><!-- my JavaScript file -->
+	<script> $( "#accordion" ).accordion(); </script> <!-- Accordion code from JQuery-ui index.html -->
+</body>
+</html>

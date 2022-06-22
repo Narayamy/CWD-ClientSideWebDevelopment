@@ -1,0 +1,18 @@
+h1, h2, h3{
+	color:purple;
+}
+body{
+	text-align:center;
+	font-family:verdana, geneva, sans-serif;
+}
+nav ul a, footer ul a, aside ul a{
+	text-decoration:none;
+}
+#menu h2{
+	font-family:impact, serif;
+}
+#menu {
+font-family:"trebuchet ms", serif;
+}
+
+	

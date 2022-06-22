@@ -1,0 +1,42 @@
+body{
+	font-family:verdana;
+}
+#masthead{
+	font-family:"arial impact",san-serif;
+	letter-spacing:-2px;
+}
+#masthead h1{
+		font-size:3em;
+	}
+#masthead p{
+	font-size:2em;
+	text-transform:Uppercase;
+}
+
+nav ul a{
+	font-weight:bold;
+	text-decoration:underline;
+}
+#content h2 {
+	font-size:georgia,serif;
+	font-size:2em;
+	font-weight:normal;
+}
+#content p{
+	font-size:georgia, serif;
+	line-height:1.6;
+}
+#content article figure figcaption{
+	font-style:italic;
+	font-size:0.2;
+}
+#content a{
+	text-decoration:none;
+}
+.readmore{
+	text-align:justify;
+	text-decoration:underline;
+}
+footer{
+	text-align:justify;
+}
